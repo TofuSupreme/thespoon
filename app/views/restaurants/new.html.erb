@@ -1,0 +1,23 @@
+<%= form_for @restaurant do |f| %>
+<%= f.label :name %>
+<%= f.text_field :name %>
+<%= f.label :address %>
+<%= f.text_field :address %>
+<%= f.label :rating %>
+<%= f.text_field :rating %>
+<%= f.submit %>
+<% end %>
+
+<%# The params is a hash. Since there are multiple values for the restaurant.
+params[:name]
+params[:addres]
+params[:rating]
+Restaurant.create(name: 'five guys', address: 'washington dc', rating: 4)
+
+params = {
+  restaurant: {
+    name: 'five guys',
+    address: 'washington dc',
+    rating: 4
+  }
+} %>
