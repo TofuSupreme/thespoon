@@ -14,5 +14,6 @@ Rails.application.routes.draw do
   # patch '/restaurants/:id', to: 'restaurants#update'
   # # delete a restaurant
   # delete '/restauants/:id', to: 'restaurants#destroy'
+  root to: 'restaurants#index'
   resources :restaurants
 end

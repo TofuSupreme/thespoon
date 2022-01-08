@@ -1,12 +1,6 @@
-<%= form_for @restaurant do |f| %>
-<%= f.label :name %>
-<%= f.text_field :name %>
-<%= f.label :address %>
-<%= f.text_field :address %>
-<%= f.label :rating %>
-<%= f.text_field :rating %>
-<%= f.submit %>
-<% end %>
+<%# Refactored code %>
+<%= render 'form', restaurant: @restaurant %>
+
 
 <%# The params is a hash. Since there are multiple values for the restaurant.
 params[:name]
